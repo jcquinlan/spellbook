@@ -1,0 +1,15 @@
+<template name="loggedLayout">
+
+        <ul id="slide-out" class="side-nav fixed">
+            <li><h3 class="center-align">Spellbook</h3></li>
+            <li><a href="{{pathFor route='dashboard'}}">Dashboard</a></li>
+            <li><a href="{{pathFor route='characters'}}">Characters</a></li>
+            <li id="logout"><a href="#">Logout</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    
+
+    <main>
+        {{ > yield }}
+    </main>
+</template>

@@ -1,0 +1,72 @@
+/* Colors
+ * Light Grey - #FCF0E8
+ * Medium Grey - #CFBDB3
+ * Dark Grey - #423F3B
+ * Red - #C90000
+ */
+
+/* ---------------- General Overrides ------------------ */
+body {
+    background-color: #eee;
+}
+a {
+    color: #333;
+}
+nav {
+    background-color: #C90000;
+}
+nav i {
+    height: 50px;
+    line-height: 70px !important;
+}
+.side-nav h3 {
+    color: #fff;
+}
+.side-nav li {
+    padding: 0;
+}
+.side-nav li:hover {
+    background-color: inherit;
+}
+.sidenav li a {
+    padding: 0 15px;
+    color: #fff;
+}
+.collection .collection-item:last-child {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+/* ---------------- Side Nav Fixes ----------------- */
+header, main, footer {
+    padding-left: 240px;
+}
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+
+/* --------------- General ------------------------ */
+.profile {
+    text-align: center;
+}
+#add-character {
+    position: fixed;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    font-size: 40px;
+    bottom: 50px;
+    right: 50px;
+    background-color: #C90000;
+}
+
+/* ----------- Slide Out ----------------------- */
+#slide-out {
+    background-color: #AD1A1A;
+}
+.side-nav.fixed a {
+    color: #fff;
+}

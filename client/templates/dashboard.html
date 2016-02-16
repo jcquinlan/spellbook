@@ -1,0 +1,29 @@
+<template name="dashboard">
+    <div class="row">
+        <div class="col l8 s12">
+            <ul class="collection">
+                {{#each spells}}
+                    {{ > spell }}
+                {{/each}}
+            </ul>
+        </div><!--End Col-->
+
+        <div class="col l4">
+            <div class="profile">
+                <h6>Current User</h6>
+            </div>
+        </div>
+    </div><!--End Row-->
+</template>
+
+<template name="spell">
+    <a href='spell/{{this._id}}'>
+        <li class="collection-item avatar hoverable">
+          <img src="fire-bottle.png" alt="" class="circle">
+          <span class="title">{{ name }}</span>
+          <p>{{ school }} <br>
+             {{ components }}
+          </p>
+        </li>
+    </a>
+</template>
