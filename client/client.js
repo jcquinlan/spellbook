@@ -83,3 +83,22 @@ Template.dashboard.helpers({
 Template.characters.onRendered(function(){
     $('.modal-trigger').leanModal();
 });
+
+Template.characters.events({
+    'click [type="submit"]': function(event){
+        event.preventDefault();
+
+        var name = $('#new-character').val().trim();
+        if(name != ''){
+            Meteor.call('addCharacter', name, function(err){
+                if(err){
+                    console.log(err);
+                    Session.set('newCharacterError', err.error);
+                } else {
+                    console.log('New character added.');
+                    
+                }
+            });
+        }
+    }
+});

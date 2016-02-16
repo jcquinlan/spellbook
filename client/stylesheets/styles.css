@@ -2,7 +2,7 @@
  * Light Grey - #FCF0E8
  * Medium Grey - #CFBDB3
  * Dark Grey - #423F3B
- * Red - #C90000
+ * Red - #AD1A1A
  */
 
 /* ---------------- General Overrides ------------------ */
@@ -26,6 +26,12 @@ nav i {
     padding: 0;
 }
 .side-nav li:hover {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #C93232;
+}
+.side-nav li:first-child:hover {
     background-color: inherit;
 }
 .sidenav li a {
@@ -61,6 +67,9 @@ header, main, footer {
     bottom: 50px;
     right: 50px;
     background-color: #C90000;
+}
+.page-title {
+    color: #423F3B;
 }
 
 /* ----------- Slide Out ----------------------- */

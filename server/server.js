@@ -9,3 +9,9 @@ Meteor.startup(function(){
 Meteor.publish('spells', function(){
     return Spells.find();
 });
+
+Meteor.methods({
+    'addCharacter': function(name){
+        Characters.insert({ createdBy: Meteor.userId(), name: name, createdAt: new Date(), spells: [] });
+    }
+});

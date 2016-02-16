@@ -1,5 +1,10 @@
 <template name="dashboard">
     <div class="row">
+        <div class="col l12 center-align">
+            <h3 class="page-title">Spells</h3>
+        </div>
+    </div>
+    <div class="row">
         <div class="col l8 s12">
             <ul class="collection">
                 {{#each spells}}
@@ -19,7 +24,7 @@
 <template name="spell">
     <a href='spell/{{this._id}}'>
         <li class="collection-item avatar hoverable">
-          <img src="fire-bottle.png" alt="" class="circle">
+          <img src="{{ school }}.png" alt="" class="circle">
           <span class="title">{{ name }}</span>
           <p>{{ school }} <br>
              {{ components }}
