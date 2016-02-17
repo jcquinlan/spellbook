@@ -10,6 +10,10 @@ Meteor.publish('spells', function(){
     return Spells.find();
 });
 
+Meteor.publish('characters', function(){
+    return Characters.find();
+});
+
 Meteor.methods({
     'addCharacter': function(name){
         Characters.insert({ createdBy: Meteor.userId(), name: name, createdAt: new Date(), spells: [] });

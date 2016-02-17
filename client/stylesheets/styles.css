@@ -34,9 +34,19 @@ nav i {
 .side-nav li:first-child:hover {
     background-color: inherit;
 }
+.side-nav li:nth-child(2):hover {
+    background-color: inherit;
+}
 .sidenav li a {
     padding: 0 15px;
     color: #fff;
+}
+.collection {
+    border: none;
+    padding: 10px;
+}
+.collection .collection-item {
+    margin-bottom: 8px;
 }
 .collection .collection-item:last-child {
     border-bottom: 1px solid #e0e0e0;
@@ -56,7 +66,11 @@ header, main, footer {
 
 /* --------------- General ------------------------ */
 .profile {
-    text-align: center;
+    margin-top: 8px;
+}
+.profile h5 {
+    color: #423F3B;
+    font-size: 1.4rem;
 }
 #add-character {
     position: fixed;
@@ -70,6 +84,15 @@ header, main, footer {
 }
 .page-title {
     color: #423F3B;
+}
+.logo-name {
+    margin: 0;
+    margin-bottom: 30px;
+}
+.logo-wrapper img {
+    width: 80px;
+    margin-top: 30px;
+    display: inline-block;
 }
 
 /* ----------- Slide Out ----------------------- */

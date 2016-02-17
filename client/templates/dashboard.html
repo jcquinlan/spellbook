@@ -15,16 +15,18 @@
 
         <div class="col l4">
             <div class="profile">
-                <h6>Current User</h6>
+                <h5>Character: James</h5>
+                <h5>Level: 2</h5>
+                <h5>Spells: 14</h5>
             </div>
-        </div>
+        </div><!--End Col-->
     </div><!--End Row-->
 </template>
 
 <template name="spell">
     <a href='spell/{{this._id}}'>
         <li class="collection-item avatar hoverable">
-          <img src="{{ school }}.png" alt="" class="circle">
+          <img src="{{ school }}.png" class="circle">
           <span class="title">{{ name }}</span>
           <p>{{ school }} <br>
              {{ components }}

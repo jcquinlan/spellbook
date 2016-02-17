@@ -1,4 +1,8 @@
 Meteor.subscribe('spells');
+Meteor.subscribe('characters');
+
+
+
 // Logged Layout ----------------------- Logged Layout
 Template.loggedLayout.events({
     'click #logout': function(event){
@@ -88,7 +92,8 @@ Template.characters.events({
     'click [type="submit"]': function(event){
         event.preventDefault();
 
-        var name = $('#new-character').val().trim();
+        var name = $('#new-character-name').val();
+
         if(name != ''){
             Meteor.call('addCharacter', name, function(err){
                 if(err){
@@ -96,7 +101,8 @@ Template.characters.events({
                     Session.set('newCharacterError', err.error);
                 } else {
                     console.log('New character added.');
-                    
+                    $('#new-character-name').val('');
+                    $('#new-character').closeModal();
                 }
             });
         }
