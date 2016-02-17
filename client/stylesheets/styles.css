@@ -87,6 +87,7 @@ header, main, footer {
 }
 .logo-name {
     margin: 0;
+    margin-top: -10px;
     margin-bottom: 30px;
 }
 .logo-wrapper img {
