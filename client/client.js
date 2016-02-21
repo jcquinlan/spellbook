@@ -88,6 +88,13 @@ Template.characters.onRendered(function(){
     $('.modal-trigger').leanModal();
 });
 
+Template.characters.helpers({
+    characters: function(){
+        return Characters.find({ createdBy: Meteor.userId() });
+    }
+
+});
+
 Template.characters.events({
     'click [type="submit"]': function(event){
         event.preventDefault();
