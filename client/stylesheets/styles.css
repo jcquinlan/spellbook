@@ -43,7 +43,6 @@ nav i {
 }
 .collection {
     border: none;
-    padding: 10px;
 }
 .collection .collection-item {
     margin-bottom: 8px;
@@ -71,6 +70,7 @@ header, main, footer {
 .profile h5 {
     color: #423F3B;
     font-size: 1.4rem;
+    margin-bottom: -8px;
 }
 #add-character {
     position: fixed;

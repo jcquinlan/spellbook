@@ -86,6 +86,7 @@ Template.dashboard.helpers({
 // Characters ------------------------- Characters
 Template.characters.onRendered(function(){
     $('.modal-trigger').leanModal();
+    $('select').material_select();
 });
 
 Template.characters.helpers({
